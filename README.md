@@ -52,6 +52,19 @@ Provides actionable insights for supply chain adjustments.
 Sends instant alerts via Discord webhooks and Slack.
 Visualizes risks and trends with actionable recommendations.
 
+## Models Used in This Project
+
+### Primary AI Models
+- **BERT (bert-base-uncased)**: Main model for sentiment analysis and risk factor classification
+- **Hugging Face Transformers**: Framework for model implementation and fine-tuning
+- **PyTorch**: Deep learning framework for model training
+
+### Model Applications
+- **Sentiment Analysis**: Fine-tuned BERT for analyzing positive/negative sentiment in supply chain news
+- **Risk Classification**: Fine-tuned BERT for categorizing risks (climate, geopolitical, economic, logistical)
+
+*For detailed model documentation, see [MODELS_DOCUMENTATION.md](MODELS_DOCUMENTATION.md) and [MODELS_USED.md](MODELS_USED.md)*
+
 ## Tech Stack
 
 **Languages:** Python
@@ -66,9 +79,11 @@ Visualizes risks and trends with actionable recommendations.
 
 **Libraries and Frameworks:**
 
-**Hugging Face Transformers:** For BERT and LargeMini models.
+**Hugging Face Transformers:** For BERT model implementation and fine-tuning.
 
-**pytorch:** PyTorch is an open-source deep learning framework for building and training machine learning models with flexibility and efficiency.
+**PyTorch:** Deep learning framework for building and training machine learning models.
+
+**TensorFlow:** Additional deep learning framework support.
 
 **REST API:** Used to fetch external data.
 
